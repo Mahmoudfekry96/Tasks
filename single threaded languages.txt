@@ -1,0 +1,20 @@
+JavaScript:
+ Primarily used for web development, JavaScript operates on a single-threaded event loop,
+ meaning it processes one task at a time. This is true for client-side JavaScript running in browsers.
+__________________________________________________________________________
+Python (default implementation - CPython):
+ While Python has support for threading, 
+the Global Interpreter Lock (GIL) in CPython ensures that only one thread executes Python bytecode at a time. Thus,
+ it can be considered single-threaded in many contexts.
+__________________________________________________________________________
+Ruby:
+ Similar to Python, Ruby's standard implementation (MRI) uses a Global Interpreter Lock (GIL),
+ making it effectively single-threaded for CPU-bound operations.
+__________________________________________________________________________
+Lua: 
+Lua is a lightweight scripting language that is single-threaded by default. 
+It is often embedded in applications to provide scripting capabilities.
+__________________________________________________________________________
+PHP: 
+Although PHP can be used in multi-threaded web servers like Apache with the appropriate configuration,
+ PHP itself is traditionally single-threaded. Each request to a PHP script runs in its own process.
